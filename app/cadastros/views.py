@@ -24,7 +24,7 @@ def detalhar_cadastros(request, id):
     for funcionario in funcionarios:
         if funcionario['id'] == id:
 
-            return render(request, 'detalhes_cadastros.html', {'funcionario': funcionario})
+            return render(request, 'detalhar_cadastros.html', {'funcionario': funcionario})
 
     return HttpResponse('Funcionário não encontrado')    
 

@@ -1,12 +1,11 @@
 from django.contrib import admin
 from django.urls import path, include
-from cadastros.views import listar_cadastros, detalhar_cadastros
 from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path('cadastros/', listar_cadastros),
-    path('cadastros/<int:id>/', detalhar_cadastros)
+    path('admin/', admin.site.urls),
+    path('cadastros/', include('cadastros.urls')),
 ]
 
 if settings.DEBUG:
