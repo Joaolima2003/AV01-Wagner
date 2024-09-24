@@ -1,1 +1,33 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
 env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Django
+*.log
+*.sqlite3
+db.sqlite3
+/static/
+media/
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+
+# Outros
+*.DS_Store
+*.env
+*.env.local
+*.env.production
+*.env.development
